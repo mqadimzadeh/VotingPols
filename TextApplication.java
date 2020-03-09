@@ -1,6 +1,13 @@
-
+package application;
 
 import java.util.Scanner;
+
+import model.Factory;
+
+import model.Party;
+import model.Poll;
+import model.PollList;
+
 import java.util.ArrayList;
 public class TextApplication {
 	
@@ -107,9 +114,12 @@ public class TextApplication {
 					System.out.println(p);
 				}
 			} */
+			newapp.displayPollDataBySeat(polllist.getAggregatePoll(partyNames));
+			
+			
+		}
+		if(form.toUpperCase().equals("ALL")) {
 			newapp.displayPollsBySeat(partyNames);
-			
-			
 		}
 		
 		
